@@ -1,7 +1,24 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class MeatProductMenu implements ProductMenu {
 
 	public void showMenu() {
-
+		try {
+			//System.out.println("try block");
+			Scanner s1 = new Scanner(new File("src/ProductInfo.txt"));
+			while (s1.hasNextLine()) {
+				String textFileM = s1.nextLine();
+				String[] textInFileM = textFileM.split(":");
+				//System.out.println("First Value:" + textInFileP[0]);
+				if (textInFileM[0].contains("Meat")) {
+					System.out.println(textInFileM[1]);
+				}
+			}
+		} catch (FileNotFoundException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	public void showAddButton() {

@@ -14,6 +14,8 @@ public class Facade {
 	private ClassProductList theProductList;
 
 	private Person thePerson;
+
+
 	public boolean login(){
 		System.out.println("Enter Login Credentials");
 		Scanner s1= new Scanner(System.in);
@@ -70,7 +72,25 @@ public class Facade {
 //		}
 return false;
 	}
+	public void showList() {
 
+		System.out.println("-------------Implementation With Builder Design Pattern Started-----------");
+		MeatProductMenu mMenu = new MeatProductMenu();
+		ProduceProductMenu pMenu = new ProduceProductMenu();
+		System.out.println("Select 0 for MeatProductMenu and 1 for ProduceProductMenu");
+		Scanner s1 = new Scanner(System.in);
+		int selectNum = s1.nextInt();
+		switch (selectNum) {
+			case 0:
+				System.out.println("---Meat Product Menu---");
+				mMenu.showMenu();
+				break;
+			case 1:
+				System.out.println("---Produce Product Menu---");
+				pMenu.showMenu();
+				break;
+		}
+	}
 	public void addTrading() {
 
 	}
