@@ -8,13 +8,8 @@ public class PTBSMain {
         Facade facade = new Facade();
         System.out.println("-------------Implementation With Facade Design Pattern Started-----------");
         facade.login();
-        if(true){
-            System.out.println("Login success");
-        }
-        else
-            System.out.println("Invalid credentials..Please try again");
         facade.showList();
-
+        facade.viewTrading();
     }
 
 }

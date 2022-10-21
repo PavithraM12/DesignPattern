@@ -70,6 +70,7 @@ public class Facade {
 //		else {
 //			System.out.println("Invalid Credentials..Please try again");
 //		}
+
 return false;
 	}
 	public void showList() {
@@ -97,7 +98,7 @@ return false;
 	}
 
 	public void viewTrading() {
-
+		System.out.println("View trading using Visitor Pattern");
 	}
 
 	public void decideBidding() {
