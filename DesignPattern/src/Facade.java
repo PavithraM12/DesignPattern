@@ -74,12 +74,13 @@ return false;
 	}
 	public void showList() {
 
-		System.out.println("-------------Implementation With Builder Design Pattern Started-----------");
+		System.out.println("-------------Implementation With Bridge Design Pattern Started-----------");
 		MeatProductMenu mMenu = new MeatProductMenu();
 		ProduceProductMenu pMenu = new ProduceProductMenu();
 		System.out.println("Select 0 for MeatProductMenu and 1 for ProduceProductMenu");
 		Scanner s1 = new Scanner(System.in);
 		int selectNum = s1.nextInt();
+		System.out.println("-------------Implementation With Factory and Iterator Design Pattern Started-----------");
 		switch (selectNum) {
 			case 0:
 				System.out.println("---Meat Product Menu---");

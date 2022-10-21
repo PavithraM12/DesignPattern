@@ -5,10 +5,12 @@ import java.util.Scanner;
 public class MeatProductMenu implements ProductMenu {
 
 	public void showMenu() {
+		//System.out.println("-------------Implementation With Factory Design Pattern Started-----------");
 		try {
 			//System.out.println("try block");
 			Scanner s1 = new Scanner(new File("src/ProductInfo.txt"));
-			while (s1.hasNextLine()) {
+			System.out.println("-------------Iterator implemented using hasNext-----------");
+			while (s1.hasNext()) {
 				String textFileM = s1.nextLine();
 				String[] textInFileM = textFileM.split(":");
 				//System.out.println("First Value:" + textInFileP[0]);

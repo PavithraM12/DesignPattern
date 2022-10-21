@@ -1,3 +1,7 @@
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class ClassProductList {
 
 	private ReminderVisitor reminderVisitor;
@@ -9,5 +13,6 @@ public class ClassProductList {
 	public void accept(NodeVisitor visitor) {
 
 	}
+
 
 }
